@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="carousel.css" />
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            line-height: 1.6;
+            word-break: break-word;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #paragraph {
+            max-width: 1130px;
+            margin-top: 30px;
+            margin: 0 auto;
+        }
+
+        .about-us {
+            font-size: 28px;
+        }
+
+        .campaign-objective {
+            font-size: 28px;
+        }
+
+        .contributions {
+            font-size: 25px;
+            margin-top: 30px;
+        }
+
+        .spacer-contributions {
+            margin-top: 50px; 
+        }
+
+        .personal-statement {
+            font-size: 26px;
+        }
+
+        #paragraph img {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        #paragraph p {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        #paragraph ol {
+            list-style-position: outside;
+            padding-left: 0;
+        }
+
+        #paragraph li {
+            font-size: 20px;
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        #imageFormat {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .image-container {
+            max-width: 30%;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            margin-top: -10px;
+            margin-bottom: -10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>EMERGENCY RELIEF FOR GAZA <img src="assets/palestineflag.png" alt="Palestine Flag" style="max-height: 1em; vertical-align: middle;"></h1>
+
+    <!-- Cover Image -->
+    <img src="assets/cover.png" alt="Crucial Relief Image" style="max-width: 100%; height: 600px; width: 800px; margin: 20px; margin-top: -10px;">
+
+    <!-- Donations -->
+    <p style="font-size: 30px; font-weight: bold; text-align: center; margin-bottom: -30px; margin-top: -10px;">
+        <span style="color: black;">Donations:</span>
+    </p>
+
+    <!-- Icons -->
+    <p style="font-size: 30px; display: flex; align-items: center; justify-content: left;">
+        <a href="http://paypal.me/DonationsGaza" target="_blank">
+            <img src="assets/paypal.jpg" alt="Paypal" style="width: 90px; height: 80px; margin: 10px;">
+        </a>
+        <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
+            <img src="assets/venmo.png" alt="Venmo" style="width: 80px; height: 80px; margin: 10px;">
+        </a>
+        <a href="https://cash.app/$donationsgaza" target="_blank">
+            <img src="assets/cashapp.png" alt="Cashapp" style="width: 80px; height: 80px; margin: 10px;">
+        </a>
+        <img src="assets/zelle.jpg" alt="Zelle" style="width: 200px; height: 190px; margin: 10px;">
+
+
+    <div id="paragraph">
+        <p><strong><span class="about-us">About Us ♥️</span></strong></p>
+        <p>As Palestinian-Americans from Gaza, our goal is to support our communities in Gaza. Faced with the limitations of existing platforms like LaunchGood, GoFundMe, etc. that do not allow us to provide direct monetary assistance to the people of Gaza, we have taken a proactive step. Recognizing this challenge, we have established our own website featuring dedicated links for donations. This initiative aims to streamline the process and ensure that support reaches those in need more efficiently.</p>
+
+        <p><strong><span class="campaign-objective">Campaign Objective 𓂆</span></strong></p>
+        <p>Empower our critical campaign for Gaza, providing vital relief—food, water, hygiene, clothing, tents, and blankets—to the resilient people of Gaza.🕊️</p>
+        
+        <p>Amidst the challenges faced by the people of Gaza, they are facing urgent and critical needs for survival. Your support can make a profound difference by helping us provide essential necessities to those affected. We aim to address crucial aspects of their well-being, including:</p>
+        
+        <ol>
+            <li><strong>Food:</strong> Your generous contribution will help us ensure that families in Gaza have access to nutritious meals, offering sustenance and relief as they wait hours for meals such as soup.</li>
+            
+            <li><strong>Water:</strong> Clean water is a basic fundamental necessity for life. By supporting us, you enable the distribution of water bottles to communities, providing a clean water source.</li>
+            
+            <li><strong>Feminine Hygiene Products:</strong> Your donation will make a significant impact on the lives of women and girls in Gaza by supplying them with essential feminine hygiene products, promoting their health.</li>
+            
+            <li><strong>Clothes:</strong> Help us provide warmth by providing suitable clothing to those who are in need, especially during the harsh weather conditions in Gaza.</li>
+            
+            <li><strong>Tents & Blankets:</strong> As temperatures drop and many families displaced, tents and blankets become vital sources of shelter and comfort. Your support will ensure that families in Gaza have the warmth and security they need during cold nights.</li>
+
+            <div class="spacer-contributions"></div>
+
+            <p><strong><span class="contributions">Our Individual Contributions Provided:</span></strong></p>
+
+            <div id="imageFormat">
+                <!-- Food Img w/ Caption -->
+                <div class="image-container">
+                    <img src="assets/food.jpg" alt="Image of food provided to the people of Gaza">
+                    <p class="image-caption">Food</p>
+                </div>
+
+                <!-- Beanies Img w/ Caption -->
+                <div class="image-container">
+                    <img src="assets/beanies.jpg" alt="Image of beanies provided to the people of Gaza">
+                    <p class="image-caption">Beanies</p>
+                </div>
+        
+                <!-- Blankets Img w/ Caption -->
+                <div class="image-container">
+                    <img src="assets/blankets.jpg" alt="Image of blankets provided to the people of Gaza">
+                    <p class="image-caption">Blankets</p>
+                </div>
+            </div>
+        </ol>
+
+        <p>With the ability to send and provide relief now, not in the days or weeks ahead, our collective efforts have already made a meaningful impact. Individually contributing, we recognized the need for a broader outreach to garner support.</p>
+
+        <p>Your generosity becomes a lifeline for those confronting adversity, offering immediate relief and instilling hope for a brighter future. Whether big or small, every donation propels us closer to creating a lasting impact on the lives of individuals in Gaza. Stand with us in this critical mission, as we extend our hands in solidarity and compassion, making you a vital force for positive change. Thank you for being a beacon of support on this crucial journey.</p>
+
+        <p><strong><span class="personal-statement">Personal Statement 🖤</span></strong></p>
+        <p>As a refugee from Khan Yunis-Gaza, it's heart-wrenching to witness the destruction of my birthplace. While my family still resides in Khan Yunis-Gaza, I've lost friends, family, neighbors, my childhood home, schools, and beloved spots, all affected by the actions of the Israeli government.</p>
+
+        <p>Recognizing the immense impact of my personal contributions as shown with the images above, I've been sending my own money to multiple families. Witnessing the positive change brought about by these individual efforts, I've decided to extend my reach to a community that shares a profound care for humanity. Together, we can amplify our impact and provide assistance to as many families as possible in their time of need. Thank you for your humanity ❤️‍🩹</p>
+
+
+        <!-- Donations -->
+        <p style="font-size: 30px; font-weight: bold; text-align: left; margin-bottom: -30px; margin-top: -10px;">
+            <span style="color: black;">Donations:</span>
+        </p>
+
+        <!-- Icons -->
+        <p style="font-size: 30px; display: flex; align-items: center; justify-content: left;">
+            <a href="http://paypal.me/DonationsGaza" target="_blank">
+                <img src="assets/paypal.jpg" alt="Paypal" style="width: 90px; height: 80px; margin: 10px;">
+            </a>
+            <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
+                <img src="assets/venmo.png" alt="Venmo" style="width: 80px; height: 80px; margin: 10px;">
+            </a>
+            <a href="https://cash.app/$donationsgaza" target="_blank">
+                <img src="assets/cashapp.png" alt="Cashapp" style="width: 80px; height: 80px; margin: 10px;">
+            </a>
+            <img src="assets/zelle.jpg" alt="Zelle" style="width: 200px; height: 190px; margin: 10px;">
+        </p>
+    </div>
+</body>
+</html>
