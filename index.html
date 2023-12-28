@@ -158,6 +158,7 @@
                 margin: 20px;
                 display: inline-block;
                 vertical-align: top;
+                text-align: center; /* Center the content within each image-container */
             }
 
             .image-container img {
@@ -169,6 +170,9 @@
                 margin-top: -10px;
                 margin-bottom: -10px;
                 text-align: center;
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
             }
         }
 </style>
