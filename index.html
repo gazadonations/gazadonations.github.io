@@ -104,39 +104,49 @@
             text-align: center;
         }
 
-    @media only screen and (max-width: 768px) {
-        /* Add styles for mobile devices here */
-        body {
-            padding: 15px;
-            text-align: center;
-        }
+        @media only screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+                text-align: center;
+            }
 
-        h1 {
-            font-size: 30px;
-            text-align: center;
-        }
+            h1 {
+                font-size: 30px;
+                text-align: center;
+            }
 
-        #paragraph {
-            max-width: 100%;
-        }
+            #cover-section {
+                max-width: 100%;
+            }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 0;
-        }
+            #cover-image {
+                width: 100%;
+                max-height: 300px; /* Adjust the height as needed */
+                object-fit: cover; /* Ensure the image covers the container */
+                margin: 0 auto 20px; /* Center the image and add some bottom margin */
+            }
 
-        .image-container {
-            max-width: 100%;
-            margin: 10px auto;
-            text-align: center;
-        }
+            #donations-section {
+                text-align: center;
+            }
 
-        .image-container img {
-            width: 100%;
-            height: auto;
+            #donations-section img {
+                max-width: 100%;
+                height: auto;
+                margin: 10px;
+            }
+
+            .image-container {
+                max-width: 100%;
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
         }
-    }
 </style>
 
     </style>
@@ -146,25 +156,30 @@
     <h1>EMERGENCY RELIEF FOR GAZA <img src="assets/palestineflag.png" alt="Palestine Flag" style="max-height: 1em; vertical-align: middle;"></h1>
 
     <!-- Cover Image -->
-    <img src="assets/cover.png" alt="Crucial Relief Image" style="max-width: 100%; height: 600px; width: 800px; margin: 20px; margin-top: -10px;">
+    <div id="cover-section">
+        <img id="cover-image" src="assets/cover.png" alt="Crucial Relief Image">
+    </div>
 
     <!-- Donations -->
-    <p style="font-size: 30px; font-weight: bold; text-align: center; margin-bottom: -30px; margin-top: -10px;">
-        <span style="color: black;">Donations:</span>
-    </p>
+    <div id="donations-section">
+        <p style="font-size: 30px; font-weight: bold; text-align: center; margin-bottom: -30px; margin-top: -10px;">
+            <span style="color: black;">Donations:</span>
+        </p>
 
-    <!-- Icons -->
-    <p style="font-size: 30px; display: flex; align-items: center; justify-content: left;">
-        <a href="http://paypal.me/DonationsGaza" target="_blank">
-            <img src="assets/paypal.jpg" alt="Paypal" style="width: 90px; height: 80px; margin: 10px;">
-        </a>
-        <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
-            <img src="assets/venmo.png" alt="Venmo" style="width: 80px; height: 80px; margin: 10px;">
-        </a>
-        <a href="https://cash.app/$donationsgaza" target="_blank">
-            <img src="assets/cashapp.png" alt="Cashapp" style="width: 80px; height: 80px; margin: 10px;">
-        </a>
-        <img src="assets/zelle.jpg" alt="Zelle" style="width: 200px; height: 190px; margin: 10px;">
+        <!-- Icons -->
+        <p style="font-size: 30px; display: flex; align-items: center; justify-content: center;">
+            <a href="http://paypal.me/DonationsGaza" target="_blank">
+                <img src="assets/paypal.jpg" alt="Paypal" style="width: 90px; height: 80px; margin: 10px;">
+            </a>
+            <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
+                <img src="assets/venmo.png" alt="Venmo" style="width: 80px; height: 80px; margin: 10px;">
+            </a>
+            <a href="https://cash.app/$donationsgaza" target="_blank">
+                <img src="assets/cashapp.png" alt="Cashapp" style="width: 80px; height: 80px; margin: 10px;">
+            </a>
+            <img src="assets/zelle.jpg" alt="Zelle" style="width: 200px; height: 190px; margin: 10px;">
+        </p>
+    </div>
 
 
     <div id="paragraph">
