@@ -160,6 +160,27 @@
                 margin: 10px;
             }
 
+            #donations-section p {
+                font-size: 20px;
+            }
+
+            #donations-section .donation-icons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .donation-icons-row {
+                display: flex;
+                justify-content: center;
+            }
+
+            .donation-icons-row img {
+                width: 80px;
+                height: 70px;
+                margin: 10px;
+            }
+
             #paragraph {
                 max-width: 100%;
                 text-align: left;
@@ -213,24 +234,33 @@
     </div>
 
     <!-- Donations -->
-    <div id="donations-section">
+        <div id="donations-section">
         <p style="font-size: 30px; font-weight: bold; text-align: center; margin-bottom: -30px; margin-top: -10px;">
             <span style="color: black;">Donations:</span>
         </p>
 
         <!-- Icons -->
-        <p style="font-size: 30px; display: flex; align-items: center; justify-content: center;">
-            <a href="http://paypal.me/DonationsGaza" target="_blank">
-                <img src="assets/paypal.jpg" alt="Paypal" style="width: 90px; height: 80px; margin: 10px;">
-            </a>
-            <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
-                <img src="assets/venmo.png" alt="Venmo" style="width: 80px; height: 80px; margin: 10px;">
-            </a>
-            <a href="https://cash.app/$donationsgaza" target="_blank">
-                <img src="assets/cashapp.png" alt="Cashapp" style="width: 80px; height: 80px; margin: 10px;">
-            </a>
-            <img src="assets/zelle.jpg" alt="Zelle" style="width: 200px; height: 190px; margin: 10px;">
-        </p>
+        <div class="donation-icons">
+            <!-- First row: Paypal and Venmo -->
+            <div class="donation-icons-row">
+                <a href="http://paypal.me/DonationsGaza" target="_blank">
+                    <img src="assets/paypal.jpg" alt="Paypal">
+                </a>
+                <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
+                    <img src="assets/venmo.png" alt="Venmo">
+                </a>
+            </div>
+
+            <!-- Second row: Cashapp and Zelle -->
+            <div class="donation-icons-row">
+                <a href="https://cash.app/$donationsgaza" target="_blank">
+                    <img src="assets/cashapp.png" alt="Cashapp">
+                </a>
+                <a href="#"><!-- Add the link for Zelle here -->
+                    <img src="assets/zelle.jpg" alt="Zelle">
+                </a>
+            </div>
+        </div>
     </div>
 
 
@@ -290,23 +320,34 @@
 
 
         <!-- Donations -->
-        <p style="font-size: 30px; font-weight: bold; text-align: left; margin-bottom: -30px; margin-top: -10px;">
-            <span style="color: black;">Donations:</span>
-        </p>
+        <div id="donations-section">
+            <p style="font-size: 30px; font-weight: bold; text-align: center; margin-bottom: -30px; margin-top: -10px;">
+                <span style="color: black;">Donations:</span>
+            </p>
 
-        <!-- Icons -->
-        <p style="font-size: 30px; display: flex; align-items: center; justify-content: left;">
-            <a href="http://paypal.me/DonationsGaza" target="_blank">
-                <img src="assets/paypal.jpg" alt="Paypal" style="width: 90px; height: 80px; margin: 10px;">
-            </a>
-            <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
-                <img src="assets/venmo.png" alt="Venmo" style="width: 80px; height: 80px; margin: 10px;">
-            </a>
-            <a href="https://cash.app/$donationsgaza" target="_blank">
-                <img src="assets/cashapp.png" alt="Cashapp" style="width: 80px; height: 80px; margin: 10px;">
-            </a>
-            <img src="assets/zelle.jpg" alt="Zelle" style="width: 200px; height: 190px; margin: 10px;">
-        </p>
+            <!-- Icons -->
+            <div class="donation-icons">
+                <!-- First row: Paypal and Venmo -->
+                <div class="donation-icons-row">
+                    <a href="http://paypal.me/DonationsGaza" target="_blank">
+                        <img src="assets/paypal.jpg" alt="Paypal">
+                    </a>
+                    <a href="https://account.venmo.com/u/EmanHassan" target="_blank">
+                        <img src="assets/venmo.png" alt="Venmo">
+                    </a>
+                </div>
+
+                <!-- Second row: Cashapp and Zelle -->
+                <div class="donation-icons-row">
+                    <a href="https://cash.app/$donationsgaza" target="_blank">
+                        <img src="assets/cashapp.png" alt="Cashapp">
+                    </a>
+                    <a href="#"><!-- Add the link for Zelle here -->
+                        <img src="assets/zelle.jpg" alt="Zelle">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
