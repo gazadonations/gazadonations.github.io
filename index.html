@@ -104,7 +104,10 @@
             text-align: center;
         }
 
-        @media only screen and (max-width: 800px) {
+        <style>
+    /* Your existing styles here */
+
+    @media only screen and (max-width: 768px) {
         body {
             padding: 15px;
         }
@@ -120,12 +123,22 @@
         img {
             width: 100%;
             height: auto;
+            margin: 0;
         }
 
         .image-container {
             max-width: 100%;
             margin: 10px 0;
+            text-align: center;
         }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
     }
     </style>
 </head>
