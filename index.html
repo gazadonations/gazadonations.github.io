@@ -145,9 +145,9 @@
 
             #cover-image {
                 width: 100%;
-                max-height: 300px; /* Adjust the height as needed */
-                object-fit: cover; /* Ensure the image covers the container */
-                margin: 0 auto 20px; /* Center the image and add some bottom margin */
+                max-height: 300px;
+                object-fit: cover; 
+                margin: 0 auto 20px; 
             }
 
             #donations-section {
@@ -155,19 +155,24 @@
             }
 
             #donations-section img {
-                max-width: 100%;
-                height: auto;
+                width: 80px; /* Adjust the width of the icons */
+                height: 70px; /* Adjust the height of the icons */
                 margin: 10px;
             }
 
             #donations-section p {
-                font-size: 20px;
+                font-size: 20px; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap; 
             }
 
             #donations-section .donation-icons {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-top: 20px;
             }
 
             .donation-icons-row {
